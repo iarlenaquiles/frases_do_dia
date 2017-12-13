@@ -5,9 +5,12 @@ import { Text, AppRegistry } from 'react-native';
 //Formatações
 const Estilos = {
   estiloTexto: {
-    fontSize: 30,
+    fontSize: 20,
     backgroundColor: '#08509B',
-    marginTop: 30
+    paddingTop: 15,
+    color: '#fff',
+    fontWeight: '900',
+    textAlign: 'center'
   }
 };
 //criar o componente
