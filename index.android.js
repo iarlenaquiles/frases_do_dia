@@ -23,9 +23,9 @@ const Estilos = {
   },
   estiloView:{
     backgroundColor: 'skyblue',
-    height: 400,
+    height: 300,
     justifyContent: 'space-between',
-    alignItems: 'center',
+    alignItems: 'stretch',
     flexDirection: 'column'
   }
 };
