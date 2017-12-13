@@ -24,7 +24,9 @@ const Estilos = {
   estiloView:{
     backgroundColor: 'skyblue',
     height: 400,
-    justifyContent: 'flex-start'
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    flexDirection: 'column'
   }
 };
 //criar o componente
@@ -35,6 +37,7 @@ const App = () => {
   return (
     <View style={ estiloView }>
       <Text style={ estiloTexto } >Frases do Dia</Text>
+      <Text style={ estiloTexto2 } >Frases do Dia</Text>
     </View>
   );
 };
