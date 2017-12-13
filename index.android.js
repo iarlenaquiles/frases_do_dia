@@ -1,6 +1,6 @@
 //Import
 import React from 'react';
-import { Text, AppRegistry, View, TouchableOpacity } from 'react-native';
+import { Text, AppRegistry, View, Image } from 'react-native';
 
 //Formatações
 const Estilos = {
@@ -24,32 +24,18 @@ const Estilos = {
 
   principal:{
     paddingTop: 40
-  },
-  botao:{
-    backgroundColor: '#48BBEC',
-    padding: 10,
-    borderColor: '#1d8eb8',
-    borderWidth: 1,
-    borderRadius: 8
-  },
-  textoBotao:{
-    color:'#fff',
-    fontSize: 16,
-    fontWeight: 'bold',
-    alignSelf: 'center'
   }
 };
 
 //criar o componente
 const App = () => {
 
-  const { principal, botao, textoBotao } = Estilos;
+  const { principal } = Estilos;
 
   return (
     <View style={ principal }>
-      <TouchableOpacity style={ botao }>
-        <Text style={ textoBotao }>Clique aqui</Text>
-      </TouchableOpacity>
+      <Image source={ {uri: 'https://reactjs.org/logo-og.png'} }
+      style={{width: 300, height: 300}} />
     </View>
   );
 };
