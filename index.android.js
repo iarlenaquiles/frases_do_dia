@@ -4,6 +4,7 @@ import { Text, AppRegistry, View } from 'react-native';
 
 //Formatações
 const Estilos = {
+
   estiloTexto: {
     fontSize: 20,
     backgroundColor: '#08509B',
@@ -11,15 +12,20 @@ const Estilos = {
     color: '#fff',
     fontWeight: '900',
     textAlign: 'center'
+  },
+  estiloView:{
+    backgroundColor: 'skyblue',
+    height: 400,
+    justifyContent: 'flex-start'
   }
 };
 //criar o componente
 const App = () => {
 
-  const { estiloTexto } = Estilos;
+  const { estiloTexto, estiloView } = Estilos;
 
   return (
-    <View>
+    <View style={ estiloView }>
       <Text style={ estiloTexto } >Frases do Dia</Text>
     </View>
   );
