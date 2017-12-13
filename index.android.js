@@ -1,6 +1,6 @@
 //Import
 import React from 'react';
-import { Text, AppRegistry } from 'react-native';
+import { Text, AppRegistry, View } from 'react-native';
 
 //Formatações
 const Estilos = {
@@ -16,10 +16,12 @@ const Estilos = {
 //criar o componente
 const App = () => {
 
-  const {estiloTexto} = Estilos;
-  
+  const { estiloTexto } = Estilos;
+
   return (
-    <Text style={ estiloTexto } >Frases do Dia</Text>
+    <View>
+      <Text style={ estiloTexto } >Frases do Dia</Text>
+    </View>
   );
 };
 //renderizar para o dispositivo
