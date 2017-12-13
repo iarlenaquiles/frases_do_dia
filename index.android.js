@@ -15,8 +15,11 @@ const Estilos = {
 };
 //criar o componente
 const App = () => {
+
+  const {estiloTexto} = Estilos;
+  
   return (
-    <Text style={ Estilos.estiloTexto} >Frases do Dia</Text>
+    <Text style={ estiloTexto } >Frases do Dia</Text>
   );
 };
 //renderizar para o dispositivo
