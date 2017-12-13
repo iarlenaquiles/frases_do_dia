@@ -1,6 +1,6 @@
 //Import
 import React from 'react';
-import { Text, AppRegistry, View, Button } from 'react-native';
+import { Text, AppRegistry, View, TouchableOpacity } from 'react-native';
 
 //Formatações
 const Estilos = {
@@ -27,10 +27,6 @@ const Estilos = {
   }
 };
 
-const botaoPressionado = () => {
-  alert('Botão pressionado');
-};
-
 //criar o componente
 const App = () => {
 
@@ -38,7 +34,9 @@ const App = () => {
 
   return (
     <View style={ principal }>
-      <Button title="Clique aqui" color="#841584" accessbilityLabel="Clique para abrir as notícias" onPress={botaoPressionado} />
+      <TouchableOpacity>
+        
+      </TouchableOpacity>
     </View>
   );
 };
