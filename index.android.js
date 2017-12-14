@@ -1,46 +1,42 @@
 //Import
 import React from 'react';
-import { Text, AppRegistry, View, Image } from 'react-native';
+import { Text, AppRegistry, View, Image, TouchableOpacity } from 'react-native';
 
 //Formatações
 const Estilos = {
-
-  /*principal:{
-    flex: 1,
-    backgroundColor: 'cornflowerblue'
-  },
-  topo:{
-    flex: 2,
-    backgroundColor: 'brown'
-  },
-  conteudo:{
-    flex: 8,
-    backgroundColor: 'yellowgreen'
-  },
-  rodape:{
-    flex: 1,
-    backgroundColor: 'orangered'
-  }*/
-
   principal:{
-    paddingTop: 10
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
   },
-  imagem:{
-    justifyContent: 'flex-end',
-    padding: 5
+  botao:{
+    backgroundColor: '#538530',
+    paddingVertical: 10,
+    paddingHorizontal: 40,
+    marginTop: 20
+  },
+  textoBotao:{
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold'
   }
 };
 
+const botaoPressionado = () => {
+
+};
 //criar o componente
 const App = () => {
 
-  const { principal, imagem } = Estilos;
+  const { principal, botao, textoBotao } = Estilos;
 
   return (
     <View style={ principal }>
-      <Image style={ imagem } source={ require('./imgs/uvas.png') } >
-      <Text>Legenda para a foto</Text>
-      </Image>
+      <Image source={ require('./imgs/logo.png') } />
+
+      <TouchableOpacity style={ botao }>
+        <Text style={ textoBotao }>Nova Frase</Text>
+      </TouchableOpacity>
     </View>
   );
 };
